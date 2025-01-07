@@ -1,5 +1,5 @@
-var numrow = 0;
-    var numcol = 0;
+var rn = 0;
+    var cn = 0;
     function closeModal() {
 	    var myModal1 = new bootstrap.Modal(document.getElementById('exampleModal'));
 	    myModal1.hide();
@@ -7,15 +7,15 @@ var numrow = 0;
     function openSecondModal() {
 	    var myModal2 = new bootstrap.Modal(document.getElementById('exampleModal2'));
 	    myModal2.show();
-        numrow = document.getElementById('row-input').value;
+        rn = document.getElementById('row-input').value;
     }
     function createTable() {
         //Write your code here
         const table = document.querySelector('#myTable');
-        numcol = document.getElementById('col-input').value;
-        for(let i=0;i<numrow;i++){
+        cn = document.getElementById('col-input').value;
+        for(let i=0;i<rn;i++){
             const row = document.createElement('tr');
-            for(let j=0;j<numcol;j++){
+            for(let j=0;j<cn;j++){
                 const cell = document.createElement('td');
                 cell.textContent = `Row-${i} Column-${j}`;
                 row.appendChild(cell);
