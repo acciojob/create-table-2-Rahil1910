@@ -13,11 +13,11 @@ var rn = 0;
         //Write your code here
         const table = document.querySelector('#myTable');
         cn = document.getElementById('col-input').value;
-        for(let i=0;i<rn;i++){
+        for(let i=1;i<=rn;i++){
             const row = document.createElement('tr');
-            for(let j=0;j<cn;j++){
+            for(let j=1;j<=cn;j++){
                 const cell = document.createElement('td');
-                cell.textContent = `Row-${i} Column-${j}`;
+                cell.textContent = `Row-${i-1} Column-${j-1}`;
                 row.appendChild(cell);
             }
             table.appendChild(row);
