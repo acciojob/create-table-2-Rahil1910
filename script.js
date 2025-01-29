@@ -19,7 +19,7 @@ function createTable() {
         const row = table.insertRow(i); 
         for (let j = 0; j < colCount; j++) {
             const cell = row.insertCell(j);  
-            cell.textContent = Row-${i} Column-${j};  
+            cell.textContent = `Row-${i} Column-${j}`;  
         }
     }
   
